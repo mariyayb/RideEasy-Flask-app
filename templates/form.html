@@ -1,0 +1,271 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                    <!-- Bootstrap core CSS - this is set to the directory structure created during the Insight flask tutorial -->
+    <link href="../static/css/basic.css" rel="stylesheet">
+        <div class="img-banner">
+           <div class="heading">
+            RideEasy
+            
+            <div class="sub">A selling tool for motorcycle owners</div>
+            
+           </div>
+        </div>
+
+
+    
+
+<form action = "/result" method="POST">
+    <br>
+    Enter the details of your listing:<br><br>
+    
+    Title:<br> <input type="text" name="title" value="1987 HARLEY DAVIDSON FXR 1340CC V TWIN MOTORCYCLE COMPLETE VINTAGE"><br><br>
+    Subtitle:<br> <input type="text" name="subtitle" value="1987 HARLEY DAVIDSON FXR 1340CC V TWIN MOTORCYCLE COMPLETE VINTAGE"><br><br>
+    Model: <br> <input type="text" name="model" value="FXR"><br><br>
+    Make: <br> <input type="text" name="make" value="Harley-Davidson"><br><br>
+    <div> <label for="myBrowser">Category:</label><br>  <input list="suggestions" id="myBrowser" name="category" value="FXR" />
+         <datalist id="suggestions">
+             <option value="Other Makes"> Other Makes</option>
+             <option value="Sportster"> Sportster</option>
+             <option value="V Star"> V Star</option>
+             <option value ="Interceptor"> Interceptor</option>
+             <option value="KX"> KX </option>
+             <option value="GSX / Katana"> GSX/Katana</option>
+             <option value="R-Series"> R-Series</option>
+             <option value="CT"> CT </option>
+             <option value="GS"> GS </option>
+             <option value="FJR"> FJR </option>
+             <option value="Shadow"> Shadow</option>
+             <option value="SV"> SV </option>
+             <option value="Virago">Virago</option>
+             <option value="CB"> CB </option>
+             <option value="VTX"> VTX</option>
+             <option value="Bonneville"> Bonneville</option>
+             <option value="GSX-R"> GSX-R</option>
+             <option value="YZF"> YZF </option>
+             <option value="XR"> XR </option>
+             <option value="Ninja"> Ninja </option>
+             <option value="Gold Wing"> Gold Wing</option>
+             <option value="Vulcan"> Vulcan </option>
+             <option value="RM"> RM </option>
+             <option value="K-Series"> K-Series </option>
+             <option value="Boulevard"> Boulevard </option>
+             <option value="CBR"> CBR </option>
+             <option value ="DR-Z"> DR-Z </option>
+             <option value="Bandit"> Bandit </option>
+             <option value="Kymco"> Kymco </option>
+             <option value="Roadliner"> Roadliner </option>
+             <option value="Moto Guzzi"> Moto Guzzi</option>
+             <option value="Intruder"> Intruder</option>
+             <option value="Royal Star"> Royal Star</option>
+             <option value="Monster"> Monster</option>
+             <option value="KDX"> KDX</option>
+             <option value="Bultaco"> Bultaco</option>
+             <option value="XS"> XS </option>
+             <option value="Victory"> Victory</option>
+             <option value="Hyosung"> Hyosung</option>
+             <option value="KLR"> KLR</option>
+             <option value="Aprilia"> Aprilia</option>
+             <option value="Rebel"> Rebel </option>
+             <option value="Thunderbolt"> Thunderbolt</option>
+             <option value="Nighthawk"> Nighthawk</option>
+             <option value="BSA"> BSA </option>
+             <option value="YZ"> YZ</option>
+             <option value="CR"> CR </option>
+             <option value="FZ"> FZ </option>
+             <option value="F-Series"> F-Series</option>
+             <option value="CRF"> CRF </option>
+             <option vlaue="Norton"> Norton </option>
+             <option value="Softail"> Softail </option>
+             <option value="Multistrada"> Multistrada</option>
+             <option value="Super Hawk"> Super Hawk</option>
+             <option value="Touring"> Touring </option>
+             <option value ="Valkyrie"> Valkyrie</option>
+             <option value="Firebolt"> Firebolt</option>
+             <option value="Lifan"> Lifan</option>
+             <option value="Superbike"> Superbike</option>
+             <option value="YZF-R"> YZF-R</option>
+             <option value="1125R"> 1125R</option>
+             <option value="Trophy"> Trophy</option>
+             <option value="Indian"> Indian</option>
+             <option value="Dyna"> Dyna"</option>
+             <option value="Ural"> Ural</option>
+             <option value="SX"> SX </option>
+             <option value ="Stratoliner"> Stratoliner </option>
+             <option value="Speed Triple"> Speed Triple</option>
+             <option value="CL"> CL </option>
+             <option value="Husqvarna"> Husqvarna </option>
+             <option value="Blast"> Blast</option>
+             <option value="Magna"> Magna</option>
+             <option value="KLX"> KLX </option>
+             <option value="Road Star"> Road Star</option>
+             <option value="DR"> DR </option>
+             <option value ="Cushman"> Cushman</option>
+             <option value="Hayabusa"> Hayabusa</option>
+             <option value="Street Triple"> Street Triple</option>
+             <option value="Chopper"> Chopper</option>
+             <option value="XT"> XT </option>
+             <option value="RM-Z"> RM-Z </option>
+             <option value="Daytona"> Daytona </option>
+             <option value="Bobber"> Bobber </option>
+             <option value="V-ROD"> V-ROD </option>
+             <option value="Royal Enfield"> Royal Enfield</option>
+             <option value="TT"> TT </option>
+             <option value="Lightning"> Lightning</option>
+             <option value="CBX"> CBX </option>
+             <option value="WR"> WR </option>
+             <option value="Fury"> Fury</option>
+             <option value="V Max">V Max</option>
+             <option value="Can-Am"> Can-Am</option>
+             <option value="Benelli"> Benelli</option>
+             <option value="Hypermotard"> Hypermotard</option>
+             <option value="Rocket III"> Rocket III</option>
+             <option value="MV Agusta"> MV Agusta</option>
+             <option value="BETA"> BETA </option>
+             <option value="Thunderbird"> Thunderbird</option>
+             <option value="Pro Street"> Pro Street</option>
+             <option value="Trident"> Trident </option>
+             <option value="FXR"> FXR </option>
+             <option value="Tiger"> Tiger </option>
+             <option value="Big Dog"> Big Dog</option>
+             <option value="Sport Touring"> Sport Touring</option>
+             <option value="EXC"> EXC </option>
+             <option value="RC51"> RC51</option>
+             <option value="CA"> CA </option>
+             <option value="Bourget"> Bourget</option>
+             <option value="Boss Hoss"> Boss Hoss</option>
+             <option value="American Ironhorse"> American Ironhorse</option>
+             <option value="Supersport"> Supersport</option>
+             <option value="Adventure"> Adventure</option>
+             <option value="Bimota"> Bimota</option>
+             <option value="Titan"> Titan </option>
+             <option value="Other"> Other</option>
+          
+        </datalist><br><br></div>
+    
+    Price:<br> $<input type="text" name="currentprice" value="3199.99"><br><br>
+    Year:<br>
+    <select name="year">
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+        <option value="1999">1999</option>
+        <option value="1998">1998</option>
+        <option value="1997">1997</option>
+        <option value="1996">1996</option>
+        <option value="1995">1995</option>
+        <option value="1994">1994</option>
+        <option value="1993">1993</option>
+        <option value="1992">1992</option>
+        <option value="1991">1991</option>
+        <option value="1990">1990</option>
+        <option value="1989">1989</option>
+        <option value="1988">1988</option>
+        <option value="1987" selected>1987</option>
+        <option value="1986">1986</option>
+        <option value="1985">1985</option>
+        <option value="1984">1984</option>
+        <option value="1983">1983</option>
+        <option value="1982">1982</option>
+        <option value="1981">1981</option>
+        <option value="1980">1980</option>
+        <option value="1979">1979</option>
+        <option value="1978">1978</option>
+        <option value="1977">1977</option>
+        <option value="1976">1976</option>
+        <option value="1975">1975</option>
+        <option value="1974">1974</option>
+        <option value="1973">1973</option>
+        <option value="1972">1972</option>
+        <option value="1971">1971</option>
+        <option value="1970">1970</option>
+        <option value="1969">1969</option>
+        <option value="1968">1968</option>
+        <option value="1967">1967</option>
+        <option value="1966">1966</option>
+        <option value="1965">1965</option>
+        <option value="1964">1964</option>
+        <option value="1963">1963</option>
+        <option value="1962">1962</option>
+        <option value="1961">1961</option>
+        <option value="1960">1960</option>
+        <option value="1959">1959</option>
+        <option value="1958">1958</option>
+        <option value="1957">1957</option>
+        <option value="1956">1956</option>
+        <option value="1955">1955</option>
+        <option value="1954">1954</option>
+        <option value="1953">1953</option>
+        <option value="1952">1952</option>
+        <option value="1951">1951</option>
+        <option value="1950">1950</option>
+    </select><br><br>
+    Exterior Color: <br> <input type="text" name="color" value=""><br><br>
+    Engine Size (cc): <br> <input type="text" name="engine" value="1340"><br><br>
+    Mileage:<br> <input type="text" name="mileage" value="27352"><br><br>
+    Fuel Type:<br> <input type="text" name="fuelType" value=""><br><br>
+    Trim: <br><input type="text" name="trim" value=""><br><br>
+    <div> <label for="myBrowser">Type:</label><br>  <input list="suggestions" id="myBrowser" name="type" value="Standard" />
+            <datalist id="suggestions">
+                <option value="Standard">Standard</option>
+                <option value="Sport Bike"> Sport Bike</option>
+                <option value="Cruiser">Cruiser</option>
+                <option value ="Touring">Touring</option>
+                <option value="Sport Touring">Sport Touring </option>
+                <option value="Off-Road">Off Road</option>
+                <option value="Dual-Purpose">Dual Purpose</option>
+                <option value="Trike">Trike</option>
+                <option value="Chopper">Chopper</option>
+                <option value="Cafe Racer">Cafe Racer</option>
+                <option value="Naked">Naked</option>
+                <option value="Bobber">Bobber</option>
+                <option value="Pro Street">Pro Street</option>
+                <option value="Reverse Trike">Reverse Trike</option>
+                <option value="Custom">Custom</option>
+                <option value="Pro Street">Pro Street</option>
+                 <option value="other">Other</option>
+              </datalist><br><br></div>
+    Condition description: <br> <input type="text" name="conditiondescription" value=""><br><br>
+    Number of photos in your listing:<br><input type="text" name="numPics" value="24"><br><br>
+    Zipcode:<br> <input type="text" name="zipcode" value="10001"><br><br>
+    For Sale By:
+    <select name="forSaleBy">
+        <option value="dealer">Dealer</option>
+        <option value="owner">Owner</option>
+        <option value="other">Other</option>
+    </select><br><br>
+    Vehicle Title: <select name="vehicleTitle">
+        <option value="clear">Clear</option>
+        <option value="other">Other</option>
+        <option value="blank"></option>
+    </select><br><br>
+    Is there a warranty? <input type="radio" name="warranty" value="no" checked="checked"> No
+        <input type="radio" name="warranty" value="yes"> Yes<br><br>
+
+ 
+        <input type="submit" value="Submit">
+       </form>
+
+</html>
+
+
